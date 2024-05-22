@@ -1,0 +1,177 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package motaungpart2.prj;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author RC_Student_lab
+ */
+public class Task_Report {
+    private String Taskname;
+    private String Task_Status;
+    private double number;
+    private int taskduration;
+    private String Description;
+    private String developer;
+
+    public String getTaskname() {
+        return Taskname;
+    }
+
+    public void setTaskname(String Taskname) {
+        this.Taskname = Taskname;
+    }
+
+    public String getTask_Status() {
+        return Task_Status;
+    }
+
+    public void setTask_Status(String Task_Status) {
+        this.Task_Status = Task_Status;
+    }
+
+    public double getNumber() {
+        return number;
+    }
+
+    public void setNumber(double number) {
+        this.number = number;
+    }
+
+    public int getTaskduration() {
+        return taskduration;
+    }
+
+    public void setTaskduration(int taskduration) {
+        this.taskduration = taskduration;
+    }
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String Description) {
+        this.Description = Description;
+    }
+
+    public String getDeveloper() {
+        return developer;
+    }
+
+    public void setDeveloper(String developer) {
+        this.developer = developer;
+    }
+    
+    public void Finsh () { 
+        boolean itemFound = false;
+         StringBuilder sb = new
+    StringBuilder();
+         sb.append("TASK REPORT of TASK THAT ARE COMPLETE\n"+ "####################################################\n");
+         for(int b =0;b< this.Task_Status.length; b++)
+         {
+             if (this.status[b].length("Finsh"))
+             {
+                 sb.append("Developer: "+ this.developer[b]+"\n"+"Task Name:"+this.Taskname[b]+
+                         "\n"+"Task Duration:"+this.taskduration[b]+"\n"+"Status:"+ this.status[b]"\n"+"###################################\n");
+                 itemFound=true;
+                    
+             }
+         }
+         if (itemFound) {
+             JOptionPane.showMessageDialog(null, sb);
+         } else{
+             JOptionPane.showMessageDialog(null, "NO TASK HAVE BEEN COMPLETE");
+         }
+    }
+    public void duration(){
+        int max =this.taskduration;
+        int v =0;
+        for(int b=0;b< this.Task_Status.length; b++){
+            if(this.taskduration[b]>max ) {
+                max= this.taskduration[b];
+                v = b;
+            }
+        }
+        JOptionPane.showMessageDialog(null,"Developer": + this developer[v] +"\n"+ "Duration:" + this.taskduration[v]);
+    }
+    public void searchT_Name(){
+        String taskSearch=
+                JOptionPane.showInputDailog(null,"Enter the name of the task you want to search for:");
+        boolean itemFound = false;
+        for (int j =0;j<this.number.length);
+        j++{ 
+        if (taskSearch.eqaulsIgnoreCase(this.number[j])){
+            JOptionPane.showMessageDailog(null,"Task Name"+ this.Taskname[j]+"\n"+"Task Status:"+this.Task_Status[j]+"Developer:"+this.developer[j]+"\n"+"Task Status:"+this.status[j]);
+            itemFound = true;
+            break;
+        }
+    }
+    if (!itemFound){
+        JOptionPane.showMessageDialog(null,"The task name you entered cannot be found!");
+    }    
+    }
+    public void searchTaskDeveloper(){
+        String devSearch = 
+                JOptionPane.showInputDialog(null,"Enter the name of the developer you want to search for:");
+        boolean itemFound = false;
+        StringBuilder sb = new 
+            StrinBuilder();
+        sb.append("TASK REPORT OF TASK THAT ARE ASSIGNED TO"+ devSearch+"\n"+"##########################################\n");
+        for(int u = 0;u< this.developer.length(u)){
+            itemFound = true;
+        }
+    }
+    if (itemFound) {
+    JOptionPane.showMessageDialog(null, sb);
+    else{
+            JOptionPane.showMessageDialog(null, "The developer name you entered connot be found!\n");
+            }
+        } 
+    //Deleting task
+    public void deleteTask(){
+        if (this.number.length<0) {
+            
+            
+        }
+    }
+
+    void displayReport() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void displayReport() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void settaskname(String taskname) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void setTaskdeatals(String taskdeatals) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void setTaskduration(int[] taskduration) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void settaskstatus(String taskstatus) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void seachT_Developer() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void seachT_Developer() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void seachT_Developer() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+}
